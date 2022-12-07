@@ -154,7 +154,7 @@ extension Paths {
 
     private func makePostQuery(_ redirectURL: URL?) -> [(String, String?)] {
       let encoder = URLQueryEncoder()
-      encoder.encode(redirectURL, forKey: "redirect_url")
+      encoder.encode(redirectURL, forKey: "redirect_to")
       return encoder.items
     }
   }
